@@ -12,7 +12,7 @@ async function createSignedHeaders(url, referer) {
     userId = "262976705";
     let dynamicRules = await (await fetch('https://raw.githubusercontent.com/DIGITALCRIMINALS/dynamic-rules/main/onlyfans.json')).json();
     console.log(dynamicRules);
-    const time = Date.now().toString();;
+    const time = Date.now().toString();
     let urlObj = new URL(url);
     let path = urlObj.pathname;
     let query = urlObj.search;
